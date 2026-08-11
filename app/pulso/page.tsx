@@ -2,7 +2,7 @@ import { SiteShell } from "@/components/SiteShell";
 import { Dashboard } from "@/components/Dashboard";
 import { getPublishedQuestion, getQuestionBySlug } from "@/lib/questions";
 
-export default async function Home() {
+export default async function PulsoPage() {
   const [question, electionQuestion] = await Promise.all([
     getPublishedQuestion(),
     getQuestionBySlug("presidencial-2028"),

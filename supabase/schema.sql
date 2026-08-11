@@ -76,6 +76,14 @@ values
     '["Costo de vida","Seguridad","Empleo","Educación","Salud","Infraestructura"]'::jsonb,
     'published',
     now()
+  ),
+  (
+    'presidencial-2028',
+    'Si las elecciones presidenciales fueran hoy, ¿por quién votarías?',
+    'Elecciones',
+    '["David Collado","Leonel Fernández","Omar Fernández","Gonzalo Castillo","Santiago Matías","Carolina Mejía","Guido Gómez Mazara","Wellington Arnaud","Ramfis Trujillo","Otro / Indeciso"]'::jsonb,
+    'published',
+    now()
   )
 on conflict (slug) do nothing;
 
